@@ -1,0 +1,9 @@
+header , footer{
+   background-color: azure;
+   text-align: center;
+}
+.main-section li , a{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(255, 0, 208);
+}
