@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fibonacci</title>
-</head>
-<body>
-    <h2>Fibonacci Series </h2>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fibonacci</title>
+    </head>
+    <body>
+        <h2>Fibonacci Series </h2>
+        <label for="">Enter any number:</label>
+        <input type="number"  id="number">
+        <br>
+        <button onclick="fibonacci()">Fibonacci</button>
+        
+        <script>
+            function fibonacci() {
+                var a =0;
+                var b = 1;
+                var c;
+                var n = document.getElementById("number").value;
+               
+                document.write(a+"<br>");
+                document.write(b+"<br>");
+                for(var i =3; i<=n; i++)
+                {
+                    c=a+b;
+                    a=b;
+                    b=c;
+                    document.write(c+"<br>");
+                    
+                }
+                
+            }
+        </script>
+       
+    </body>
 </html>
