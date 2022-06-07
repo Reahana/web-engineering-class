@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Factorial with JS</title>
+    </head>
+    <body>
+        <h1>Factorial of a given number in JavaScript</h1>
+        <label for="">Enter a number :</label>
+        <input type="number" id="number">
+        <br>
+        <button onclick="factorial()">Factorial</button>
+        <p id="demo"></p>
+        <script>
+            function factorial() 
+            {
+                var i,num,f;
+                f=1;
+                num = document.getElementById("number").value;
+                for(i=1;i<=num;i++)
+                {
+                    f=f*i;
+                }
+                i=i-1;
+                document.getElementById("demo").innerHTML="The factorial of the number " +i+ " is: "+f ;  
+            }
+        </script>
+    </body>
+</html>
